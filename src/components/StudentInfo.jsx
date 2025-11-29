@@ -17,9 +17,9 @@ function StudentInfo({ onProceed }) {
     <div className="student-info">
       <header className="student-header">
         <h1>Welcome</h1>
-        <p className="subtitle">Student Project - Team Members</p>
+        <p className="subtitle">Team Members</p>
       </header>
-      <div className="student-list">
+      <div className="student-grid">
         {students.map((student, index) => (
           <div key={index} className="student-card">
             <div className="student-number">{index + 1}</div>
@@ -32,7 +32,7 @@ function StudentInfo({ onProceed }) {
       </div>
       <div className="proceed-section">
         <button onClick={onProceed} className="proceed-button">
-          Proceed to Posts Feed
+          View Posts
         </button>
       </div>
     </div>
