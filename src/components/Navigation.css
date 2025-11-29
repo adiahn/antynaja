@@ -1,0 +1,37 @@
+.navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: var(--surface);
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -2px 8px var(--shadow);
+  z-index: 100;
+  padding: 8px;
+  gap: 8px;
+}
+
+.nav-button {
+  flex: 1;
+  padding: 14px 20px;
+  border: none;
+  background-color: transparent;
+  color: var(--text-secondary);
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-button:active {
+  transform: scale(0.98);
+}
+
+.nav-button.active {
+  background-color: var(--primary);
+  color: white;
+}
+
